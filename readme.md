@@ -41,7 +41,7 @@ Example response:
 ]
 ```
 
-## Install
+## Installation
 
 ```
 composer require ylletjs/wp-rest-api-routes
