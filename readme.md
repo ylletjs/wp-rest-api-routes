@@ -4,6 +4,12 @@
 
 Exposing rewrite rules through the REST API.
 
+New endpoint:
+
+```
+/wp-json/wp/v2/routes
+```
+
 ## Install
 
 ```
