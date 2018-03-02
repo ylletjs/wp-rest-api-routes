@@ -1,0 +1,20 @@
+<phpunit
+  bootstrap="vendor/frozzare/wp-test-suite/bootstrap.php"
+  backupGlobals="false"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  >
+  <php>
+    <const name="WTS_PLUGIN_FILE_NAME" value="plugin.php" />
+  </php>
+  <testsuites>
+    <testsuite name="WP REST API Routes Test Suite">
+      <directory suffix=".php">./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <log type="coverage-clover" target="./tmp/clover.xml" charset="UTF-8" />
+  </logging>
+</phpunit>
