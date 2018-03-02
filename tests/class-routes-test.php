@@ -17,7 +17,11 @@ class Routes_Test extends \WP_UnitTestCase {
 		$routes = $this->class->get_routes();
 
 		$this->assertTrue( is_array( $routes ) );
-		$this->assertEmpty( $routes );
+		if ( is_multisite() ) {
+			$this->assertNotEmpty( $routes );
+		} else {
+			$this->assertEmpty( $routes );
+		}
 
 		global $wp_rewrite;
 		$wp_rewrite->set_permalink_structure( '/%postname%/' );

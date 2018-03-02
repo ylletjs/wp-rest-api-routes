@@ -92,6 +92,10 @@ class Routes {
 					$routes[$rule]['type'] = $source;
 				}
 			}
+
+			if ( empty( $routes[$rule]['type'] ) ) {
+				$routes[$rule]['type'] = 'unknown';
+			}
 		}
 
 		// Add rewrite rules that maybe are missing.
@@ -102,8 +106,8 @@ class Routes {
 			}
 
 			$routes[$rule] = [
-				'rewrite' => $rewrite,
-				'type'    => 'missing',
+				'path' => $rewrite,
+				'type' => 'missing',
 			];
 		}
 

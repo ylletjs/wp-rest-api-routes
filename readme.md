@@ -10,6 +10,37 @@ New endpoint:
 /wp-json/wp/v2/routes
 ```
 
+Example response:
+
+```json
+[
+  {
+	  "path": "^wp-json\/?$",
+	  "type": "unkown"
+  },
+  {
+	  "path": "^wp-json\/(.*)?",
+	  "type": "unkown"
+  },
+  {
+	  "path": "^index.php\/wp-json\/?$",
+	  "type": "unkown"
+  },
+  {
+	  "path": "^index.php\/wp-json\/(.*)?",
+	  "type": "unkown"
+  },
+  {
+	  "path": "blog\/category\/(.+?)\/feed\/(feed|rdf|rss|rss2|atom)\/?$",
+	  "type": "category"
+  },
+  {
+	  "path": "blog\/category\/(.+?)\/(feed|rdf|rss|rss2|atom)\/?$",
+	  "type": "category"
+  }
+]
+```
+
 ## Install
 
 ```
