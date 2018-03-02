@@ -44,7 +44,7 @@ Example response:
 ## Install
 
 ```
-composer require yllet/wp-rest-api-routes
+composer require ylletjs/wp-rest-api-routes
 ```
 
 ## License
