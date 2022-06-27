@@ -16,19 +16,19 @@ Example response:
 [
   {
 	  "path": "^wp-json\/?$",
-	  "type": "unkown"
+	  "type": "unknown"
   },
   {
 	  "path": "^wp-json\/(.*)?",
-	  "type": "unkown"
+	  "type": "unknown"
   },
   {
 	  "path": "^index.php\/wp-json\/?$",
-	  "type": "unkown"
+	  "type": "unknown"
   },
   {
 	  "path": "^index.php\/wp-json\/(.*)?",
-	  "type": "unkown"
+	  "type": "unknown"
   },
   {
 	  "path": "blog\/category\/(.+?)\/feed\/(feed|rdf|rss|rss2|atom)\/?$",
